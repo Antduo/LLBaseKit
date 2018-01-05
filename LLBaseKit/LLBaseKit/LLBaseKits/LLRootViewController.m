@@ -7,7 +7,7 @@
 //
 
 #import "LLRootViewController.h"
-
+#import "MJRefresh.h"
 @interface LLRootViewController ()
 
 @end
@@ -37,16 +37,16 @@
         _tableView.estimatedSectionHeaderHeight = 0;
         _tableView.estimatedSectionFooterHeight = 0;
 
-        //头部刷新
-//        MJRefreshNormalHeader *header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(headerRereshing)];
-//        header.automaticallyChangeAlpha = YES;
-//        header.lastUpdatedTimeLabel.hidden = YES;
-//        _tableView.mj_header = header;
-//
-//        //底部刷新
-//        _tableView.mj_footer = [MJRefreshBackNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(footerRereshing)];
-        //        _tableView.contentInset = UIEdgeInsetsMake(0, 0, 30, 0);
-        //        _tableView.mj_footer.ignoredScrollViewContentInsetBottom = 30;
+//        头部刷新
+        MJRefreshNormalHeader *header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(headerRereshing)];
+        header.automaticallyChangeAlpha = YES;
+        header.lastUpdatedTimeLabel.hidden = YES;
+        _tableView.mj_header = header;
+
+        //底部刷新
+        _tableView.mj_footer = [MJRefreshBackNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(footerRereshing)];
+                _tableView.contentInset = UIEdgeInsetsMake(0, 0, 30, 0);
+                _tableView.mj_footer.ignoredScrollViewContentInsetBottom = 30;
 
         _tableView.backgroundColor=self.view.backgroundColor;
         _tableView.scrollsToTop = YES;
@@ -91,13 +91,13 @@
 //    }
 //    return _collectionView;
 //}
-//-(void)headerRereshing{
-//
-//}
-//
-//-(void)footerRereshing{
-//
-//}
+-(void)headerRereshing{
+
+}
+
+-(void)footerRereshing{
+
+}
 
 
 - (void)didReceiveMemoryWarning {
