@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "LLBaseKit"
-  s.version      = "0.0.5"
+  s.version      = "0.0.6"
   s.summary      = "创建项目公用基础组件"
   s.description  = "我是描述创建项目公用基础组件创建项目公用基础组件创建项目公用基础组件"
   s.homepage     = "https://github.com/Xianyus/LLBaseKit"
