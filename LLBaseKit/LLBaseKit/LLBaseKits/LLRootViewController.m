@@ -7,7 +7,6 @@
 //
 
 #import "LLRootViewController.h"
-#import "MJRefresh.h"
 @interface LLRootViewController ()
 
 @end
