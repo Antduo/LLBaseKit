@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.author             = { "Saltedfish" => "1047912930.com" }
   s.platform     = :ios, "8.0"
   s.source       = { :git => "https://github.com/Xianyus/LLBaseKit.git", :tag => s.version}
-  s.source_files  = "LLBaseKit/**/*.{h,m}"
+  s.source_files  = "LLBaseKit/LLBaseKit/LLBaseKits/*.{h,m}"
   s.requires_arc = true
 
 end
