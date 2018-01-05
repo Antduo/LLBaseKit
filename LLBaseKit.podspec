@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.license      = "MIT"
   s.author             = { "Saltedfish" => "1047912930.com" }
   s.platform     = :ios, "8.0"
-  s.source       = { :git => "https://github.com/Xianyus/LLBaseKit.git", :commit => "eefe300e4e1594bf9aa3467f0cfac33486a08a7f" }
+  s.source       = { :git => "https://github.com/Xianyus/LLBaseKit.git", :tag => s.version}
   s.source_files  = "LLBaseKit/**/*.{h,m}"
   s.requires_arc = true
 
